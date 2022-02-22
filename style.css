@@ -1,0 +1,57 @@
+body {
+	background-color: aliceblue;
+}
+.intro {
+	width: 400px;
+	padding: 15px;
+	margin: 0 auto;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+}
+.intro h1 {
+	margin-top: 0;
+	text-align: center;
+}
+.intro form {
+	display: flex;
+}
+.intro form input[type="text"] {
+	border: 1px solid lightgray;
+	padding: 10px;
+	width: 70%;
+	border-radius: 3px;
+	border-right-width: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	background-color: transparent;
+}
+.intro form input[type="text"]:focus-visible {
+	outline: none;
+}
+.intro form input[type="submit"] {
+	border: 1px solid lightgray;
+	border-left-width: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 30%;
+}
+.wrapper {
+	display: none;
+	gap: 10px;
+}
+.dataItems,
+.reposWrapp {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	gap: 10px;
+}
+.dataItems .menuItem {
+	cursor: pointer;
+}
+.listRepo {
+	width: 25%;
+}
+.listRepo h3 {
+	text-transform: capitalize;
+}
